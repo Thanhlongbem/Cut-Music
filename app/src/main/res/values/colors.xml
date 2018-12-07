@@ -6,4 +6,6 @@
     <color name="toolbarColor">#ffffff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="line">#c1c0c0</color>
+    <color name="type">#6bc6ff</color>
 </resources>

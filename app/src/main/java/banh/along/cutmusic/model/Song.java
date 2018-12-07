@@ -1,21 +1,18 @@
 package banh.along.cutmusic.model;
 
 public class Song {
-    private int iconType;
     private int iconMenu;
     private String author;
     private String nameOfSong;
-    private String resource;
+    private String path;
+    private String time;
 
-
-
-
-    public int getIconType() {
-        return iconType;
+    public String getTime() {
+        return time;
     }
 
-    public void setIconType(int iconType) {
-        this.iconType = iconType;
+    public void setTime(String tinme) {
+        this.time = tinme;
     }
 
     public int getIconMenu() {
@@ -42,11 +39,11 @@ public class Song {
         this.nameOfSong = nameOfSong;
     }
 
-    public String getResource() {
-        return resource;
+    public String getPath() {
+        return path;
     }
 
-    public void setResource(String resource) {
-        this.resource = resource;
+    public void setPath(String path) {
+        this.path = path;
     }
 }

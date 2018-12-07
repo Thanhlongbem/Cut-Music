@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -92,18 +93,23 @@ public class MainActivity extends AppCompatActivity {
                 null);
 
         songsDevice = new ArrayList<>();
+
         while(cursor.moveToNext()) {
             //songsDevice.add(R.drawable.music_24, R.drawable.menu_24, cursor.getString(1).toString(), cursor.getString(4).toString(), cursor.getString(3).toString());
             Song song = new Song();
             song.setAuthor(cursor.getString(1));
             song.setNameOfSong(cursor.getString(4));
-            song.setResource(cursor.getString(5));
+            song.setPath(cursor.getString(3));
             song.setIconMenu(R.drawable.menu_24);
-            song.setIconType(R.drawable.music_24);
+            song.setTime(cursor.getString(5));
+
 
             songsDevice.add(song);
         }
     }
+
+
+
 
 
 
