@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuEditSave"
+        android:icon="@drawable/save_as_48"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuEditReset"
+        app:showAsAction="always"
+        android:title="Reset">
+    </item>
+
+    <item
+        android:id="@+id/menuEditAbout"
+        app:showAsAction="always"
+        android:title="About">
+    </item>
+
+
+</menu>
